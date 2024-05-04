@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/* PALETA DE CORES */
+:root {
+  --cor1: #2d5ca2;
+  --cor2: #eec511;
+  --cor3: #dee3e8;
+  --cor4: #bf0f23;
+  --cor5: #24bcd9;
+}
+
+.popup-content #planta{
+  background-color: rgb(24, 156, 24);
+}
+.popup-content #poison{
+  background-color: rgb(134, 59, 168);
+}
+.popup-content #fire{
+  background-color: rgb(197, 96, 29);
+}
+.popup-content #ice{
+  background-color: rgb(59, 124, 168);
+}
+.popup-content #flying{
+  background-color: rgb(59, 168, 159);
+}
+.popup-content #psychic{
+  background-color: rgb(168, 59, 144);
+}
+.popup-content #water{
+  background-color: rgb(18, 91, 201);
+}
+.popup-content #electric{
+  background-color: rgb(206, 195, 44);
+}
+.popup-content #rock{
+  background-color: rgb(85, 85, 85);
+}
+.popup-content #bug{
+  background-color: rgb(76, 212, 13);
+}
+.popup-content #normal{
+  background-color: rgb(144, 144, 144);
+}
+.popup-content #fighting{
+  background-color: rgb(229, 32, 32);
+}
+
+@font-face {
+  font-family: Pokemon;
+  src: url(../fonts/Pokemon\ Solid.ttf);
+}
+
+@font-face {
+  font-family: Ubunto;
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+/* ESTILO GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(../images/image.png);
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+h3{
+  text-align: center;
+  margin: 10px;
+  font-family: 'Ubunto', sans-serif;
+  font-size: 20px;
+  color: #0b2c5c;
+}
+h1 {
+  text-align: center;
+  font-family: Pokemon, sans-serif;
+  font-size: 35px;
+  text-decoration: none;
+  margin: 10px;
+  color: var(--cor2);
+  -webkit-text-stroke: 2px var(--cor1);
+  letter-spacing: 0.1em;
+  text-shadow: -2px 2px 0px #0b2c5c;
+  padding-bottom: 9px;
+}
+
+p{
+  font-family: "Ubunto", serif;
+  color: #0b2c5c;
+  font-size: 18px;
+  text-indent: 10px;
+  line-height: 20px;
+  text-align: justify;
+  padding: 20px 4%;
+}
+h2{
+  font-family: 'Ubunto',sans-serif;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
+}
+
+/*ESTILO CABEÇALHO*/
+
+header {
+  padding: 0px 4%;
+}
+
+header .interface .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.interface .logo img {
+  margin: 25px;
+  height: 210px;
+  width: 550px;
+}
+
+
+/* cards */
+
+
+.cards .interface .cards-box img{
+  display:  flex;
+  width: 200px;
+  margin: 0 auto;
+  filter:drop-shadow(8px 8px 6px #00000057);
+}
+
+section.cards {
+  padding: 35px;
+}
+
+section.cards .flex {
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.cards-box {
+  width: 290px;
+  height: 360px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.123);
+  background-color: #dee3e8cb;
+  padding: 20px;
+  border-radius: 8px;
+  justify-content: center;
+  text-align: justify;
+  transition: 0.2s;
+}
+
+.cards a{
+  text-decoration: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+.click{
+  transition: 0.5s;
+}
+
+.cards .click:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #06fff35e;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* popup */
+
+.popup {
+  position: fixed;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 80%;
+  transform: translate(-50%,-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 1000;
+  border-radius: 10px;
+  background-image: url(../images/fundogeraldef.jpg);
+  background-size: cover;
+}
+
+/* .popup#BulbasaurPopup{
+  background-image: url(../images/fundo-planta2.png);
+  background-size: cover;
+}
+.popup#CharmanderPopup{
+  background-image: url(../images/fundo-fogo2.jpg);
+  background-size: cover;
+}
+.popup#SquirtlePopup{
+  background-image: url(../images/fundo-agua2.jpg);
+  background-size: cover;
+}
+.popup#CaterpiePopup{
+  background-image: url(../images/fundo-bug.png);
+  background-size: cover;
+}
+.popup#WeedlePopup{
+  background-image: url(../images/fundo-bug.png);
+  background-size: cover;
+}
+.popup#PidgeyPopup{
+  background-image: url(../images/fundo-bug.png);
+  background-size: cover;
+}
+.popup#RattataPopup{
+  background-image: url(../images/fundo-bug.png);
+  background-size: cover;
+}
+.popup#SpearowPopup{
+  background-image: url(../images/fundo-bug.png);
+  background-size: cover;
+} */
+
+
+.popup.active{
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.popup-content .images{
+  text-align: center;
+  margin-right: 160px;
+  align-self: center;
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-content .images img{
+  filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.74));
+}
+
+.popup-content i{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
+}
+
+.popup-content .info{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffffc5;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+  margin: 0px;
+  padding: 5px;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.popup #close{
+  position: absolute;
+  left: 93%;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.popup-content h1{
+  margin: 0px;
+  padding: 0px;
+}
+
+.popup-content ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 0px 15px;
+}
+
+.popup-content ul li{
+  padding: 7px 15px;
+  font-size: 20px;
+  background-color: #2b5c0b;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+}
+
+.popup-content .atributos .evolution h3{
+  margin: 0;
+}
+
+.popup-content .atributos{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  margin: 0 auto;
+  height: 100px;
+  max-width: 450px;
+  border-radius: 10px;
+  gap: 13px;
+}
+
+.popup-content .tipo{
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  box-shadow:0px 0px 10px rgba(0, 0, 0, 0.199);
+  border-radius: 10px;
+}
+
+.popup-content .fraqueza{
+  background-color: transparent;
+  box-shadow:0px 0px 10px rgba(0, 0, 0, 0.212);
+  border-radius: 10px;
+}
+
+.popup-content .atributos li{
+  list-style-type: none;
+  color: white;
+}
+
+/* overlay */
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 999;
+  backdrop-filter: blur(20px);
+}
+
+#overlay.active{
+  display: flex;
+}

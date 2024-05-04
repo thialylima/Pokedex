@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/Pokebola-pokeball-png-0.png"
+      type="image/x-icon"/>
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="scripts/script.js"></script>
+    <title>Pokedex</title>
+  </head>
+  <body>
+    
+    <div id="overlay" onclick="toggle('popup')"></div>
+
+    <header>
+      <div class="interface">
+        <div class="logo">
+          <img src="./assets/images/logo-pokemon1.png" alt="POKÉMON" />
+        </div>
+        <!--logo-->
+      </div>
+      <!--interface-->
+    </header>
+
+    <main>
+      <section class="cards">
+        <div class="interface">
+          <div class="flex">
+
+            <div class="click" onclick="toggle('BulbasaurPopup')">
+              <div class="cards-box">
+                <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png alt="Bulbasaur" />
+                <h1>Bulbasaur</h1>
+              </div>
+            </div>
+
+            <div class="click" onclick="toggle('CharmanderPopup')">
+              <div class="cards-box">
+                <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png alt="Charmander" />
+                <h1>Charmander</h1>
+              </div>
+            </div>
+
+            <div class="click" onclick="toggle('SquirtlePopup')">
+              <div class="cards-box">
+                <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png alt="Squirtle" />
+                <h1>Squirtle</h1>
+              </div>
+            </div>
+
+            <div class="click" onclick="toggle('CaterpiePopup')">
+              <div class="cards-box">
+                <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/010.png alt="Caterpie" />
+                <h1>Caterpie</h1>
+              </div>
+            </div>
+            
+            <div class="click" onclick="toggle('WeedlePopup')">
+              <div class="cards-box">
+                <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/013.png alt="Weedle" />
+                <h1>Weedle</h1>
+              </div>
+            </div>
+
+            <div class="click" onclick="toggle('PidgeyPopup')">
+              <div class="cards-box">
+                <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/016.png alt="Pidgey" />
+                <h1>Pidgey</h1>
+              </div>
+            </div>
+
+            <div class="click" onclick="toggle('RattataPopup')">
+              <div class="cards-box">
+                <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/019.png alt="Rattata" />
+                <h1>Rattata</h1>
+              </div>
+            </div>
+
+            <div class="click" onclick="toggle('SpearowPopup')">
+              <div class="cards-box">
+                <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/021.png alt="Spearow" />
+                <h1>Spearow</h1>
+              </div>
+            </div>
+          </div>
+          <!-- flex -->
+        </div>
+        <!-- interface -->
+      </section>
+    </main>
+
+    <!-- POP UPS -->
+    <div class="popup" id="BulbasaurPopup">
+        <i id="close" onclick="toggle('BulbasaurPopup')" class="bi bi-x-circle"></i>
+      <div class="popup-content">
+        <div class="images">
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png alt="Bulbasaur">
+          <h2>Bulbasaur</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/002.png alt="Ivysaur">
+          <h2>Ivysaur</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/003.png alt="Venusaur">
+          <h2>Venusaur</h2>
+        </div>
+        <div class="info">
+          <h1>Bulbasaur</h1>
+            <p>
+              Bulbasaur é um Pokémon do tipo Grama/Venenoso, conhecido por sua semente
+              nas costas que se desenvolve em um bulbo floral. Ele é um dos Pokémon
+              iniciais da região de Kanto.</p>
+
+              <div class="atributos">
+                <div class="evolution">
+                  <h3>Evoluções: Bulbasaur > Ivysaur > Venusaur</h3>
+                </div>
+                
+                <div class="tipo">
+                  <h3>TIPO</h3>
+                  <ul>
+                    <li id="planta"><span>Planta</span></li>
+                    <li id="poison"><span>Venenoso</span></li>
+                  </ul>
+                </div>
+
+                  <div class="fraqueza">
+                    <h3>FRAQUEZAS</h3>
+                    <ul>
+                      <li id="fire"><span>Fogo</span></li>
+                      <li id="ice"><span>Gelo</span></li>
+                      <li id="flying"><span>Voador</span></li>
+                      <li id="psychic"><span>Psíquico</span></li>
+                    </ul>
+                  </div>
+                
+            </div> <!--atributos-->
+            </div> <!--info-->
+          </div> <!--popup-content-->
+      </div> <!--popup-->
+
+    <div class="popup" id="CharmanderPopup">
+      <i id="close" onclick="toggle('CharmanderPopup')" class="bi bi-x-circle"></i>
+      <div class="popup-content">
+        <div class="images">
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png alt="Charmander">
+          <h2>Charmander</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/005.png alt="Charmeleon">
+          <h2>Charmeleon</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png alt="Charizard">
+          <h2>Charizard</h2>
+        </div>
+        <div class="info">
+          <h1>Charmander</h1>
+            <p>
+              Charmander é um pequeno lagarto de cor laranja com uma chama acesa na
+          ponta de sua cauda. Ele é conhecido por ser um Pokémon do tipo Fogo e
+          por sua personalidade corajosa.</p>
+
+              <div class="atributos">
+                <div class="evolution">
+                  <h3>Evoluções: Charmander > Charmeleon > Charizard</h3>
+                </div>
+                
+                <div class="tipo">
+                  <h3>TIPO</h3>
+                  <ul>
+                    <li id="fire"><span>Fogo</span></li>
+                    <li id="flying"><span>Voador</span></li>
+                  </ul>
+                </div>
+
+                  <div class="fraqueza">
+                    <h3>FRAQUEZAS</h3>
+                    <ul>
+                      <li id="water"><span>Água</span></li>
+                      <li id="electric"><span>Elétrico</span></li>
+                      <li id="rock"><span>Pedra</span></li>
+                    </ul>
+                  </div>
+                
+            </div> <!--atributos-->
+            </div> <!--info-->
+          </div> <!--popup-content-->
+    </div>
+
+    <div class="popup" id="SquirtlePopup">
+      <i id="close" onclick="toggle('SquirtlePopup')" class="bi bi-x-circle"></i>
+      <div class="popup-content">
+        <div class="images">
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png alt="Squirtle">
+          <h2>Squirtle</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/008.png alt="Wartortle">
+          <h2>Wartortle</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/009.png alt="Blastoise">
+          <h2>Blastoise</h2>
+        </div>
+        <div class="info">
+          <h1>Squirtle</h1>
+            <p>
+              Squirtle é um Pokémon aquático com uma carapaça azulada. Ele é conhecido
+          por sua habilidade de disparar jatos d'água de sua boca e por sua
+          personalidade amigável e travessa.</p>
+
+              <div class="atributos">
+                <div class="evolution">
+                  <h3>Evoluções: Squirtle > Wartortle > Blastoise</h3>
+                </div>
+                
+                <div class="tipo">
+                  <h3>TIPO</h3>
+                  <ul>
+                    <li id="water"><span>Água</span></li>
+                  </ul>
+                </div>
+
+                  <div class="fraqueza">
+                    <h3>FRAQUEZAS</h3>
+                    <ul>
+                      <li id="planta"><span>Planta</span></li>
+                      <li id="electric"><span>Elétrico</span></li>
+                    </ul>
+                  </div>
+                
+            </div> <!--atributos-->
+            </div> <!--info-->
+          </div> <!--popup-content-->
+    </div>
+
+    <div class="popup" id="CaterpiePopup">
+      <i id="close" onclick="toggle('CaterpiePopup')" class="bi bi-x-circle"></i>
+      <div class="popup-content">
+        <div class="images">
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/010.png alt="Caterpie">
+          <h2>Caterpie</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/011.png alt="Metapod">
+          <h2>Metapod</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/012.png alt="Butterfree">
+          <h2>Butterfree</h2>
+        </div>
+        <div class="info">
+          <h1>Caterpie</h1>
+            <p>
+              Caterpie é um Pokémon do tipo Inseto, conhecido por seu corpo verde
+          alongado e detalhes em amarelo. Ele tem pequenas antenas em sua cabeça e
+          é reconhecido por sua habilidade de lançar fios de seda.</p>
+
+              <div class="atributos">
+                <div class="evolution">
+                  <h3>Evoluções: Caterpie > Metapod > Butterfree</h3>
+                </div>
+                
+                <div class="tipo">
+                  <h3>TIPO</h3>
+                  <ul>
+                    <li id="bug"><span>Inseto</span></li>
+                  </ul>
+                </div>
+
+                  <div class="fraqueza">
+                    <h3>FRAQUEZAS</h3>
+                    <ul>
+                      <li id="fire"><span>Fogo</span></li>
+                      <li id="flying"><span>Voador</span></li>
+                      <li id="rock"><span>Pedra</span></li>
+                    </ul>
+                  </div>
+                
+            </div> <!--atributos-->
+            </div> <!--info-->
+          </div> <!--popup-content-->
+    </div>
+
+    <div class="popup" id="WeedlePopup">
+      <i id="close" onclick="toggle('WeedlePopup')" class="bi bi-x-circle"></i>
+      <div class="popup-content">
+        <div class="images">
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/013.png alt="Weedle">
+          <h2>Weedle</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/014.png alt="Kakuna">
+          <h2>Kakuna</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/015.png" alt="Beedrill">
+          <h2>Beedrill</h2>
+        </div>
+        <div class="info">
+          <h1>Weedle</h1>
+            <p>
+              Weedle é do tipo Inseto/Venenoso. Tem um corpo pequeno e
+              cilíndrico de cor marrom, conhecido por seu ferrão venenoso na cabeça e
+              por sua capacidade de disparar veneno quando se sente ameaçado.</p>
+
+              <div class="atributos">
+                <div class="evolution">
+                  <h3>Evoluções: Weedle > Kakuna > Beedrill</h3>
+                </div>
+                
+                <div class="tipo">
+                  <h3>TIPO</h3>
+                  <ul>
+                    <li id="bug"><span>Inseto</span></li>
+                    <li id="poison"><span>Venenoso</span></li>
+                  </ul>
+                </div>
+
+                  <div class="fraqueza">
+                    <h3>FRAQUEZAS</h3>
+                    <ul>
+                      <li id="fire"><span>Fogo</span></li>
+                      <li id="rock"><span>Pedra</span></li>
+                      <li id="flying"><span>Voador</span></li>
+                      <li id="psychic"><span>Psíquico</span></li>
+                    </ul>
+                  </div>
+                
+            </div> <!--atributos-->
+            </div> <!--info-->
+          </div> <!--popup-content-->
+    </div>
+
+    <div class="popup" id="PidgeyPopup">
+      <i id="close" onclick="toggle('PidgeyPopup')" class="bi bi-x-circle"></i>
+      <div class="popup-content">
+        <div class="images">
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/016.png alt="Pidgey">
+          <h2>Pidgey</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src=https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/017.png alt="Pidgeotto">
+          <h2>Pidgeotto</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/018.png alt="Pigeot">
+          <h2>Pidgeot</h2>
+        </div>
+        <div class="info">
+          <h1>Pidgey</h1>
+            <p>Pidgey do tipo Normal/Voador, reconhecido por sua agilidade e habilidades de voo. Suas asas largas lhe conferem destreza no ar. Possui um bico afiado e garras para se defender quando necessário.</p>
+
+              <div class="atributos">
+                <div class="evolution">
+                  <h3>Evoluções: Pidgey > Pidgeotto > Pidgeot</h3>
+                </div>
+                
+                <div class="tipo">
+                  <h3>TIPO</h3>
+                  <ul>
+                    <li id="normal"><span>Normal</span></li>
+                    <li id="flying"><span>Voador</span></li>
+                  </ul>
+                </div>
+
+                  <div class="fraqueza">
+                    <h3>FRAQUEZAS</h3>
+                    <ul>
+                      <li id="rock"><span>Pedra</span></li>
+                      <li id="electric"><span>Elétrico</span></li>
+                      <li id="ice"><span>Gelo</span></li>
+                    </ul>
+                  </div>
+                
+            </div> <!--atributos-->
+            </div> <!--info-->
+          </div> <!--popup-content-->
+    </div>
+
+    <div class="popup" id="RattataPopup">
+      <i id="close" onclick="toggle('RattataPopup')" class="bi bi-x-circle"></i>
+      <div class="popup-content">
+        <div class="images">
+          <img src= https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/019.png alt="Rattata">
+          <h2>Rattata</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src=https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/020.png alt="Raticate">
+          <h2>Raticate</h2>
+        </div>
+        <div class="info">
+          <h1>Rattata</h1>
+            <p>Rattata é um Pokémon Normal , com um corpo pequeno ágil e astuto. Possui dentes afiados e uma cauda longa, sendo habilidoso em encontrar alimentos e explorar seu ambiente.</p>
+
+              <div class="atributos">
+                <div class="evolution">
+                  <h3>Evoluções: Rattata > Raticate</h3>
+                </div>
+                
+                <div class="tipo">
+                  <h3>TIPO</h3>
+                  <ul>
+                    <li id="normal"><span>Normal</span></li>
+                  </ul>
+                </div>
+
+                  <div class="fraqueza">
+                    <h3>FRAQUEZAS</h3>
+                    <ul>
+                      <li id="fighting"><span>Lutador</span></li>
+                    </ul>
+                  </div>
+                
+            </div> <!--atributos-->
+            </div> <!--info-->
+          </div> <!--popup-content-->
+    </div>
+
+    <div class="popup" id="SpearowPopup">
+      <i id="close" onclick="toggle('SpearowPopup')" class="bi bi-x-circle"></i>
+      <div class="popup-content">
+        <div class="images">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/021.png" alt="Spearow">
+          <h2>Spearow</h2>
+          <i class="bi bi-arrow-down"></i>
+          <img src=https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/022.png alt="Fearow">
+          <h2>Fearow</h2>
+        </div>
+        <div class="info">
+          <h1>Spearow</h1>
+            <p>Spearow é do tipo Voador/Normal. É reconhecido por sua agilidade no ar e por sua natureza
+              territorial, muitas vezes sendo encontrado em grupos defendendo seus
+              territórios.</p>
+
+              <div class="atributos">
+                <div class="evolution">
+                  <h3>Evoluções: Spearow > Fearow</h3>
+                </div>
+                
+                <div class="tipo">
+                  <h3>TIPO</h3>
+                  <ul>
+                    <li id="normal"><span>Normal</span></li>
+                    <li id="flying"><span>Voador</span></li>
+                  </ul>
+                </div>
+
+                  <div class="fraqueza">
+                    <h3>FRAQUEZAS</h3>
+                    <ul>
+                      <li id="rock"><span>Pedra</span></li>
+                      <li id="ice"><span>Gelo</span></li>
+                      <li id="electric"><span>Elétrico</span></li>
+                    </ul>
+                  </div>
+                
+            </div> <!--atributos-->
+            </div> <!--info-->
+          </div> <!--popup-content-->
+    </div>
+
+
+  </body>
+</html>
