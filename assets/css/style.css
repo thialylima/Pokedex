@@ -39,11 +39,22 @@
   background-color: rgb(76, 212, 13);
 }
 .popup-content #normal{
-  background-color: rgb(144, 144, 144);
+  background-color: rgb(202, 186, 161);
 }
 .popup-content #fighting{
   background-color: rgb(229, 32, 32);
 }
+.popup-content #ground{
+  background-color: rgb(138, 96, 56);
+}
+.popup-content #fairy{
+  background-color: rgb(255, 141, 246);
+}
+.popup-content #steel{
+  background-color: rgb(148, 148, 148);
+}
+
+
 
 @font-face {
   font-family: Pokemon;
@@ -71,7 +82,6 @@ body {
 }
 
 .interface {
-  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -102,7 +112,7 @@ h1 {
 p{
   font-family: "Ubunto", serif;
   color: #0b2c5c;
-  font-size: 18px;
+  font-size: 18px 4%;
   text-indent: 10px;
   line-height: 20px;
   text-align: justify;
@@ -145,12 +155,12 @@ header .interface .logo {
 }
 
 section.cards {
-  padding: 35px;
+  padding: 25px;
 }
 
 section.cards .flex {
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -162,18 +172,20 @@ section.cards .flex {
   padding: 20px;
   border-radius: 8px;
   justify-content: center;
+  align-items: center;
   text-align: justify;
   transition: 0.2s;
 }
 
-.cards a{
-  text-decoration: none;
-  pointer-events: none;
-  user-select: none;
-}
 
 .click{
-  transition: 0.5s;
+    margin: 10px; /* Adicione margem entre os cards */
+    width: 290px; /* Defina uma largura fixa para cada card */
+    box-sizing: border-box; /* Certifique-se de que a largura inclua a margem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
 }
 
 .cards .click:hover{
@@ -199,7 +211,8 @@ section.cards .flex {
   transition: 0.4s;
   z-index: 1000;
   border-radius: 10px;
-  background-image: url(../images/fundogeraldef.jpg);
+  /* background-color: #0b2d53a9; */
+  background-image: url(../images/pokebolaa.jpg);
   background-size: cover;
 }
 
@@ -274,7 +287,7 @@ section.cards .flex {
 .popup-content .info{
   display: flex;
   flex-direction: column;
-  background-color: #ffffffc5;
+  background-color: #ffffffee;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
   margin: 0px;
   padding: 5px;
@@ -298,8 +311,8 @@ section.cards .flex {
 
 .popup-content ul{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  gap: 15px;
   margin: 0px 15px;
 }
 
@@ -322,8 +335,7 @@ section.cards .flex {
   align-items: stretch;
   text-align: center;
   margin: 0 auto;
-  height: 100px;
-  max-width: 450px;
+  width: 90%;
   border-radius: 10px;
   gap: 13px;
 }
@@ -362,4 +374,60 @@ section.cards .flex {
 
 #overlay.active{
   display: flex;
+}
+
+@media screen and (max-width: 568px){
+  
+  .interface .logo img {
+    margin: 20px;
+    height: 125px;
+    width: 300px;
+  }
+
+  .cards-box {
+    width: 250px;
+    height: 260px;
+  }
+
+  .cards .interface .cards-box img{
+    width: 140px;
+  }
+
+  h1 {
+    font-size: 27px;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 1369px){
+
+
+}
+
+
+/* Ocultar cards que não devem ser mostrados inicialmente */
+.cards-box.hidden {
+  display: none;
+}
+
+/* Estilo do botão "Carregar mais" */
+.cards .load-moree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+ .load-moree button{
+  text-align: center;
+  font-size: 60px;
+  color: rgb(228, 247, 255);
+  background: transparent;
+  border-style: none;
+  transition: 0.3s;
+}
+ .load-moree button:hover{
+  transform: scale(1.08);
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 5px rgba(253, 253, 253, 0.5));
 }
