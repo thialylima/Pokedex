@@ -93,13 +93,13 @@ h3{
   text-align: center;
   margin: 10px;
   font-family: 'Ubunto', sans-serif;
-  font-size: 20px;
+  font-size: 1.1em;
   color: #0b2c5c;
 }
 h1 {
   text-align: center;
   font-family: Pokemon, sans-serif;
-  font-size: 35px;
+  font-size: 2em;
   text-decoration: none;
   margin: 10px;
   color: var(--cor2);
@@ -112,7 +112,7 @@ h1 {
 p{
   font-family: "Ubunto", serif;
   color: #0b2c5c;
-  font-size: 18px 4%;
+  font-size: 1em;
   text-indent: 10px;
   line-height: 20px;
   text-align: justify;
@@ -121,7 +121,7 @@ p{
 h2{
   font-family: 'Ubunto',sans-serif;
   color: white;
-  font-size: 15px;
+  font-size: 1em;
   margin-bottom: 10px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
 }
@@ -211,8 +211,8 @@ section.cards .flex {
   transition: 0.4s;
   z-index: 1000;
   border-radius: 10px;
-  /* background-color: #0b2d53a9; */
-  background-image: url(../images/pokebolaa.jpg);
+  /* background-color: #0b2d53c2; */
+  background-image: url(../images/pokeballblue.png);
   background-size: cover;
 }
 
@@ -305,6 +305,7 @@ section.cards .flex {
 }
 
 .popup-content h1{
+  font-size: 2em;
   margin: 0px;
   padding: 0px;
 }
