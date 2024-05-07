@@ -160,6 +160,7 @@ header .interface .logo {
 
 section.cards {
   padding: 25px;
+  margin: 0px 12px;
 }
 
 section.cards .flex {
@@ -169,8 +170,9 @@ section.cards .flex {
 }
 
 .cards-box {
-  width: 290px;
-  height: 360px;
+  width: 270px;
+  height: 340px;
+  margin: 10px;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.123);
   background-color: #dee3e8cb;
   padding: 20px;
@@ -182,8 +184,7 @@ section.cards .flex {
 }
 
 .click{
-    margin: 10px; 
-    width: 290px; 
+    width: 270px; 
     box-sizing: border-box; 
     display: flex;
     justify-content: center;
@@ -191,13 +192,40 @@ section.cards .flex {
     transition: 0.4s;
 }
 
-.cards .click:hover{
+.cards .cards-box:hover{
   transform: scale(1.05);
   box-shadow: 0 0 20px #06fff35e;
   border-radius: 10px;
   cursor: pointer;
 }
 
+/* Ocultar cards que não devem ser mostrados inicialmente */
+.cards-box.hidden{
+  display: none;
+}
+
+
+/* Estilo do botão "Carregar mais" */
+.cards .load-moree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+ .load-moree button{
+  text-align: center;
+  font-size: 60px;
+  color: rgb(228, 247, 255);
+  background: transparent;
+  border-style: none;
+  transition: 0.3s;
+}
+ .load-moree button:hover{
+  transform: scale(1.08);
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 5px rgba(253, 253, 253, 0.5));
+}
 
 /* popup */
 
@@ -346,12 +374,51 @@ section.cards .flex {
   display: flex;
 }
 
+@media screen and (max-width: 1271px){
+  
+}
+
+@media screen and (max-width: 1150px){
+  .popup-content .info h1{
+    font-size: 3vw;
+  }
+  h2{
+    font-size: 1.5vw;
+  }
+  p{
+    font-size: 1.5vw;
+  }
+
+  h3{
+    font-size: 1.5vw;
+  }
+  .popup-content .images{
+    width: 11vw;
+  }
+}
+
+@media screen and (max-width:745px){
+  .popup-content .info h1{
+    font-size: 4vw;
+  }
+
+  .popup #close{
+    left: 91%;
+    font-size: 4vw;
+  }
+
+  p{
+    font-size: 2.1vw;
+  }
+}
+
+/* fundo principal */
 @media screen and (max-width: 568px){
   
   .interface .logo img {
     margin: 20px;
-    height: 125px;
-    width: 300px;
+    height: 150px;
+    width: 370px;
   }
 
   .cards-box {
@@ -377,117 +444,153 @@ section.cards .flex {
   }
 }
 
-@media screen and (max-width: 1150px){
-  .popup-content .info h1{
-    font-size: 3vw;
-  }
-
-  h2{
-    font-size: 1.5vw;
-  }
-  p{
-    font-size: 1.5vw;
-  }
-
-  h3{
-    font-size: 1.5vw;
-  }
-
-  .popup-content .images{
-    width: 11vw;
-  }
-}
-
-@media screen and (max-width: 900px){
-  .popup-content .images{
-    width: 15vw;
-  }
-  .popup-content .info h1{
-    font-size: 3.4vw;
-  }
-
-  p{
-    font-size: 1.8vw;
-  }
-
-  h2{
-    font-size: 2vw;
-  }
-  h3{
-    font-size: 1.7vw;
-  }
-  .popup-content ul li{
-    font-size: 1.6vw;
-  }
-
-}
-
-@media screen and (max-width:670px){
-  .popup-content .info h1{
-    font-size: 4vw;
-  }
-
-  .popup #close{
-    left: 91%;
-    font-size: 4vw;
-    cursor: pointer;
-  }
-
-  p{
-    font-size: 2.1vw;
-  }
-}
-
-@media screen and (max-width:498px) {
+/* mobile em pé */
+@media screen and (max-width:431px){
   .popup-content .images{
     display: none;
+  }
+  .popup{
+    width: 97%;
   }
   .popup-content .info{
     width: 100%;
   }
   .popup-content .info h1{
     font-size: 8vw;
-    margin: 6px;
+    margin: 10px;
   }
   h1{
     font-size: 7vw;
   }
   p{
-    font-size: 3.4vw;
+    font-size: 3.5vw;
+    margin: 1px;
   }
-
   h3{
-    font-size: 4vw;
+    font-size: 3.3vw;
   }
   .popup-content ul li{
     font-size: 3.6vw;
   }
+.flex .cards-box.hidden{
+    margin: 0px;
+  }
 }
 
+/* mobile deitado */
+@media screen and (max-height:431px){
+  .popup-content .images{
+    width: 54px;
+  }
+  .popup-content .info{
+    width: 100%;
+  }
+  .popup #close{
+    top: 5%;
+    font-size: 3vw;
+  }
+  .popup-content .info h1{
+   display: none;
+  }
+  p{
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 10px;
+  }
+  h3{
+    margin: 4px;
+  }
+  h1{
+    font-size: 3.5vw;
+  }
+  .cards-box{
+    width: 300px;
+    height: 340px;
+  }
 
-/* Ocultar cards que não devem ser mostrados inicialmente */
-.cards-box.hidden {
-  display: none;
 }
 
-/* Estilo do botão "Carregar mais" */
-.cards .load-moree {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px;
+/* mobile pequeno em pé */
+@media screen and (max-width:321px){
+
+  .cards-box{
+    width: 200px;
+  }
+  .click{
+    width: 200px;
+  }
+  .interface .logo img {
+    margin: 20px;
+    height: 100px;
+    width: 270px;
+  }
+  .popup-content .images{
+    display: none;
+  }
+  .popup{
+    width: 97%;
+    height: 100%;
+  }
+  .popup-content .info{
+    width: 100%;
+  }
+  .popup-content .info h1{
+    font-size: 7vw;
+    margin: 0px;
+  }
+  h1{
+    font-size: 7.5vw;
+  }
+  p{
+    font-size: 3vw;
+    margin: 0px;
+  }
+  h3{
+    font-size: 3vw;
+  }
+  .popup-content ul li{
+    font-size: 2.5vw;
+  }
+  .popup #close{
+    left: 90%;
+    top: 4%;
+    font-size: 5vw;
+  }
 }
 
- .load-moree button{
-  text-align: center;
-  font-size: 60px;
-  color: rgb(228, 247, 255);
-  background: transparent;
-  border-style: none;
-  transition: 0.3s;
+/* mobile pequeno deitado */
+@media screen and (max-height:321px){
+  .popup-content .images{
+    width: 45px;
+  }
+  .popup-content .info{
+    width: 100%;
+  }
+  .popup-content .info h1{
+   display: none;
+  }
+  p{
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 5px;
+  }
+  h3{
+    margin: 3px;
+  }
+  h1{
+    font-size: 4vw;
+  }
+  .cards-box{
+    width: 200px;
+    height: 240px;
+  }
+  .popup-content ul li{
+    font-size: 1.2vw;
+  }
+  .click{
+    width: 200px;
+    padding: 0;
+    margin:0;
+  }
 }
- .load-moree button:hover{
-  transform: scale(1.08);
-  cursor: pointer;
-  filter: drop-shadow(0px 0px 5px rgba(253, 253, 253, 0.5));
-}
+

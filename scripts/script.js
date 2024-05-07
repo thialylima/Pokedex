@@ -28,7 +28,7 @@ function loadMore() {
     }
   }
   
-  // Inicialização: esconder todos os cards exceto os primeiros 4
+  // Inicialização: esconder todos os cards exceto os primeiros 8
   document.addEventListener('DOMContentLoaded', function() {
     const cards = document.querySelectorAll('.cards-box');
     for (let i = 8; i < cards.length; i++) {
