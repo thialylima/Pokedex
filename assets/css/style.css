@@ -93,8 +93,12 @@ h3{
   text-align: center;
   margin: 10px;
   font-family: 'Ubunto', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.4vw;
   color: #0b2c5c;
+}
+
+.popup-content .info h1{
+  font-size: 2.4vw;
 }
 h1 {
   text-align: center;
@@ -112,16 +116,18 @@ h1 {
 p{
   font-family: "Ubunto", serif;
   color: #0b2c5c;
-  font-size: 1em;
-  text-indent: 10px;
-  line-height: 20px;
+  font-size: 1.3vw;
+  text-indent: 1.5em;
+  line-height: 1.2em;
   text-align: justify;
   padding: 20px 4%;
+  margin-bottom: 1em;
 }
+
 h2{
   font-family: 'Ubunto',sans-serif;
   color: white;
-  font-size: 1em;
+  font-size: 1vw;
   margin-bottom: 10px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
 }
@@ -143,13 +149,11 @@ header .interface .logo {
   width: 550px;
 }
 
-
 /* cards */
-
 
 .cards .interface .cards-box img{
   display:  flex;
-  width: 200px;
+  width: 85%;
   margin: 0 auto;
   filter:drop-shadow(8px 8px 6px #00000057);
 }
@@ -177,11 +181,10 @@ section.cards .flex {
   transition: 0.2s;
 }
 
-
 .click{
-    margin: 10px; /* Adicione margem entre os cards */
-    width: 290px; /* Defina uma largura fixa para cada card */
-    box-sizing: border-box; /* Certifique-se de que a largura inclua a margem */
+    margin: 10px; 
+    width: 290px; 
+    box-sizing: border-box; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,8 +206,8 @@ section.cards .flex {
   padding: 40px;
   top: 50%;
   left: 50%;
-  width: 70%;
-  height: 80%;
+  width: 80%;
+  height: 90%;
   transform: translate(-50%,-50%);
   visibility: hidden;
   opacity: 0;
@@ -215,40 +218,6 @@ section.cards .flex {
   background-image: url(../images/pokeballblue.png);
   background-size: cover;
 }
-
-/* .popup#BulbasaurPopup{
-  background-image: url(../images/fundo-planta2.png);
-  background-size: cover;
-}
-.popup#CharmanderPopup{
-  background-image: url(../images/fundo-fogo2.jpg);
-  background-size: cover;
-}
-.popup#SquirtlePopup{
-  background-image: url(../images/fundo-agua2.jpg);
-  background-size: cover;
-}
-.popup#CaterpiePopup{
-  background-image: url(../images/fundo-bug.png);
-  background-size: cover;
-}
-.popup#WeedlePopup{
-  background-image: url(../images/fundo-bug.png);
-  background-size: cover;
-}
-.popup#PidgeyPopup{
-  background-image: url(../images/fundo-bug.png);
-  background-size: cover;
-}
-.popup#RattataPopup{
-  background-image: url(../images/fundo-bug.png);
-  background-size: cover;
-}
-.popup#SpearowPopup{
-  background-image: url(../images/fundo-bug.png);
-  background-size: cover;
-} */
-
 
 .popup.active{
   visibility: visible;
@@ -266,15 +235,15 @@ section.cards .flex {
 
 .popup-content .images{
   text-align: center;
-  margin-right: 160px;
+  margin-right: 15%;
   align-self: center;
-  width: 13%;
+  width: 9vw;
   display: flex;
   flex-direction: column;
 }
 
 .popup-content .images img{
-  filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.74));
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.76));
 }
 
 .popup-content i{
@@ -287,7 +256,7 @@ section.cards .flex {
 .popup-content .info{
   display: flex;
   flex-direction: column;
-  background-color: #ffffffee;
+  background-color: #ffffffb7;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
   margin: 0px;
   padding: 5px;
@@ -319,7 +288,7 @@ section.cards .flex {
 
 .popup-content ul li{
   padding: 7px 15px;
-  font-size: 20px;
+  font-size: 1.4vw;
   background-color: #2b5c0b;
   border-radius: 10px;
   margin-bottom: 18px;
@@ -390,6 +359,14 @@ section.cards .flex {
     height: 260px;
   }
 
+  .click{
+    width: 250px;
+  }
+
+  section.cards .flex {
+    gap: 0px;
+}
+
   .cards .interface .cards-box img{
     width: 140px;
   }
@@ -400,9 +377,90 @@ section.cards .flex {
   }
 }
 
-@media screen and (max-width: 1369px){
+@media screen and (max-width: 1150px){
+  .popup-content .info h1{
+    font-size: 3vw;
+  }
 
+  h2{
+    font-size: 1.5vw;
+  }
+  p{
+    font-size: 1.5vw;
+  }
 
+  h3{
+    font-size: 1.5vw;
+  }
+
+  .popup-content .images{
+    width: 11vw;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .popup-content .images{
+    width: 15vw;
+  }
+  .popup-content .info h1{
+    font-size: 3.4vw;
+  }
+
+  p{
+    font-size: 1.8vw;
+  }
+
+  h2{
+    font-size: 2vw;
+  }
+  h3{
+    font-size: 1.7vw;
+  }
+  .popup-content ul li{
+    font-size: 1.6vw;
+  }
+
+}
+
+@media screen and (max-width:670px){
+  .popup-content .info h1{
+    font-size: 4vw;
+  }
+
+  .popup #close{
+    left: 91%;
+    font-size: 4vw;
+    cursor: pointer;
+  }
+
+  p{
+    font-size: 2.1vw;
+  }
+}
+
+@media screen and (max-width:430px) {
+  .popup-content .images{
+    display: none;
+  }
+  .popup-content .info{
+    width: 100%;
+  }
+  .popup-content .info h1{
+    font-size: 8vw;
+  }
+  h1{
+    font-size: 7vw;
+  }
+  p{
+    font-size: 4vw;
+  }
+
+  h3{
+    font-size: 4vw;
+  }
+  .popup-content ul li{
+    font-size: 4vw;
+  }
 }
 
 
