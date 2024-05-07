@@ -438,7 +438,7 @@ section.cards .flex {
   }
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:391px) {
   .popup-content .images{
     display: none;
   }
@@ -452,14 +452,14 @@ section.cards .flex {
     font-size: 7vw;
   }
   p{
-    font-size: 4vw;
+    font-size: 3.4vw;
   }
 
   h3{
     font-size: 4vw;
   }
   .popup-content ul li{
-    font-size: 4vw;
+    font-size: 3.6vw;
   }
 }
 
