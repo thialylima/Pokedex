@@ -447,6 +447,7 @@ section.cards .flex {
   }
   .popup-content .info h1{
     font-size: 8vw;
+    margin: 6px;
   }
   h1{
     font-size: 7vw;
