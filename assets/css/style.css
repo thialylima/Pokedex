@@ -438,7 +438,7 @@ section.cards .flex {
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:498px) {
   .popup-content .images{
     display: none;
   }
