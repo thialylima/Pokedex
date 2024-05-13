@@ -374,35 +374,7 @@ section.cards .flex {
   display: flex;
 }
 
-@media screen and (max-width: 1522px){
-  .interface .logo img {
-    margin: 20px;
-    height: 200px;
-    width: 470px;
-  }
-
-  .cards-box {
-    width: 280px;
-    height: 290px;
-  }
-
-  .click{
-    width: 280px;
-  }
-
-  section.cards .flex {
-    gap: 0px;
-}
-
-  .cards .interface .cards-box img{
-    width: 170px;
-  }
-
-  h1 {
-    font-size: 28px;
-    margin: 5px;
-  }
-}
+ 
 
 @media screen and (max-width: 1150px){
   .popup-content .info h1{
