@@ -165,7 +165,7 @@ section.cards {
 
 section.cards .flex {
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
 }
 
